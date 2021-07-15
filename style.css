@@ -1,0 +1,145 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e8e7e7;
+}
+
+main {
+    width: 700px;
+}
+
+h1{
+    background-color: #5B45B9;
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+#container {
+    background-color: white;
+}
+
+#adding {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: white;
+    text-align: center;
+    border-top: 3px solid #5B45B9;
+    border-bottom: 3px solid #5B45B9;
+}
+
+#adding button {
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 10%;
+    padding: 1em;
+    margin-left: 30px;
+    font-weight: 900;
+    transition: 250ms;
+}
+
+#adding button:active {
+    background-color: #d6d6d6;
+}
+
+#adding input {
+    height: 30px;
+    width: 250px;
+    background-color: #5B45B9;
+    color: #EEEEEE;
+    border: none;
+    padding-left: 1em;
+    border-radius: 2px;
+}
+
+#adding input::placeholder {
+    color: #EEEEEE;
+}
+
+#adding input:focus{
+    outline: none;
+}
+
+h2{
+    margin: 0;
+    padding: 20px 0 20px 40px;
+    flex-grow: 1;
+    color: #5B45B9;
+    text-transform: capitalize;
+}
+
+
+.todo {
+    border-bottom: 1px solid #e8e7e7;
+    display: flex;
+    align-items: center;
+}
+
+.action button{
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: #6d6875;
+    border-radius: 2px;
+    font-weight: 800;
+    transition: 250ms;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.action button:first-child:hover{
+    background-color: #ff851b;
+}
+
+.action button:nth-child(2):hover{
+    background-color: #ef5350;
+}
+
+.action button:first-child:active{
+    background-color: #ce6000;
+}   
+
+.action button:nth-child(2):active{
+    background-color: #de1814;
+}
+
+/* .disable{
+    display: none;
+} */
+
+.todo .changeTodo {
+    flex-grow: 1;
+}
+
+.changeTodo input{
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    font-size: 1.5em;
+    border: none;
+    color: #5B45B9;
+}
+
+.changeTodo input:focus{
+    outline: none;
+}
+
+.changeTodo button{
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 10%;
+    padding: 1em;
+    font-weight: 900;
+    transition: 250ms;
+}
+
+.changeTodo button:active {
+    background-color: #d6d6d6;
+}
